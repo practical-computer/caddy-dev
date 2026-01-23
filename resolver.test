@@ -1,0 +1,3 @@
+# Necessary for caddy-dev to resolve this TLD
+# Install at /etc/resolver/test
+nameserver 127.0.0.1
