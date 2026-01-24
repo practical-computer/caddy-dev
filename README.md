@@ -27,9 +27,9 @@ This setup is composed of the following components/bits:
 
 1. A record in your DNS resolver (`/etc/resolver/*` on macOS) to point everything the `test` TLD to your local machine
 2. Running `dnsmasq` as a service, with a rule to route all `.test` addresses to localhost
-  * You can actually run whatever DNS server you want; I just chose `dnsmasq` because it is installable via Homebrew and is easy to configure
-1. A `caddy` instance that runs with `.caddy-dev/Caddyfile` as its config file and auto-reloads any changes
-  * This is what the `caddy-dev` script does!
+   * You can actually run whatever DNS server you want; I just chose `dnsmasq` because it is installable via Homebrew and is easy to configure
+3. A `caddy` instance that runs with `.caddy-dev/Caddyfile` as its config file and auto-reloads any changes
+   * This is what the `caddy-dev` script does!
 
 You can see the individual files that build up to this in the repo, and I'll explain them in a bit of detail below:
 
