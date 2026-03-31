@@ -123,6 +123,14 @@ touch ~/.caddy-dev/imports/.keep
 echo "import imports/*" >> ~/.caddy-dev/Caddyfile
 ```
 
+## Miscellaneous Linux installation notes
+
+*These notes are relevant if you've installed `caddy` through your default package manager on Linux (eg: `apt`)*
+
+* The global configuration file is located at `/etc/caddy/`
+* Make sure your additional Caddy configuration files in `/etc/caddy` are owned by `root`
+* Make sure to run `caddy trust` as root (ie: `sudo caddy trust`)
+* You *may* need to manually install Caddy's CA certificate from `/etc/sll/certs` (the file starts with `Caddy_Local Authority`) into your browsers.
 
 # Contributors welcome!
 
@@ -136,3 +144,4 @@ If you'd like to help, reach out!
 * https://vninja.net/2020/02/06/macos-custom-dns-resolvers/
 * https://tobiasmaier.info/posts/2024/10/27/linux-puma-dev-caddy.html
 * https://mvogelgesang.com/blog/20240419/creating-a-simple-homebrew-formula/
+* [@gusrub](https://github.com/gusrub) for Linux installation notes
